@@ -14,7 +14,7 @@ Scripts in work (https://github.com/Chenjunjie1996/Self-Used-Scripts) \
 Medical Immunology Contents and Notes (https://github.com/Chenjunjie1996/Immunology/tree/main) \
 Rust Course Notes (https://github.com/Chenjunjie1996/Rust_Course, https://github.com/Chenjunjie1996/Rust_advance) \
 Java Course Notes (https://github.com/Chenjunjie1996/java_learn) \
-Solve questions in leetcode by Rust (https://github.com/Chenjunjie1996/leetcode, https://github.com/Chenjunjie1996/Leetcode_Rust) \
+Solve questions in leetcode by Rust (https://github.com/Chenjunjie1996/leetcode, https://github.com/Chenjunjie1996/Leetcode_Rust)
 
 
 
