@@ -5,6 +5,7 @@ Learning: Rust, Nextflow, deep learning \
 I was involved in several projects when I was in Singleron between 2020 and 2024. These projects include pipeline analysis of full-length receptor (BCR/TCR) sequences, cdr3 receptor (BCR/TCR) sequences, bulk BCR/TCR sequences, single cell ATAC (Assay for Transposase Accessible Chromatin).
 
 ## Contributed to
+https://github.com/Chenjunjie1996/scflvdj \
 https://github.com/Chenjunjie1996/SingleCell_VDJ \
 https://github.com/singleron-RD/CeleScope \
 https://github.com/singleron-RD/CeleScope_ATAC
