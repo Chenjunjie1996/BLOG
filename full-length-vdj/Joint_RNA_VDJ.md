@@ -51,3 +51,8 @@ UMAPPlot(rna,group.by='Class',cols=c('grey','red'),label=TRUE)
 ```
 
 ## Result
+### UMAPPLOT for cell-type
+<img src="./assign.png" width = "500" height = "500">.
+### UMAPPLOT for VDJ Enrichment Efficiency
+<img src="./umapplot.png" width = "500" height = "500">.
+### [Assembled cell number in each cluster](./match_barcodes_celltypes_distribution.txt)
