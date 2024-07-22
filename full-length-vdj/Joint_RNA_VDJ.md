@@ -48,6 +48,31 @@ rna <- RunUMAP(rna, dims = 1:20)
 UMAPPlot(rna,group.by='seurat_cluster',label=TRUE)
 UMAPPlot(rna,group.by='celltype',label=TRUE,label.box=TRUE)
 UMAPPlot(rna,group.by='Class',cols=c('grey','red'),label=TRUE)
+
+# save meta file get more detailed info
+write.csv(rna@meta.data, "meta.csv")
+```
+
+## Calculate VDJ Enrichment Efficiency use Pandas
+```
+import pandas as pd
+
+# common cell type name of T/B cell.
+CELL_TYPE_DICT = {
+    'TCR':['TCELLS', 'TCELL', 'NKTCELLS', 'TANDNK', 'TREG', 'TH1', 'CD4NAIVET', 'CD8TEFF', 'TH17'],
+    'BCR':['MATUREBCELL', 'PLASMACELLS', 'BCELLS', 'BCELL', 'PREBCELLCD34'],
+    }
+
+df = pd.read_csv(meta)
+
+# celltype column name in meta.
+ident = 'celltype'
+df[ident] = df[ident].apply(lambda x: re.sub(r"[^a-zA-Z0-9]","", str(x)).upper())
+df_count = df[df[ident].isin(mapping_cell_type)]
+
+assembled_cell_count.append(int(df_count['Class'].value_counts()))
+total_cell_count.append(int(df_count.shape[0]))
+percent = assembled_cell_count / total_cell_count
 ```
 
 ## Result
