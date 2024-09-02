@@ -1,10 +1,12 @@
-## Install 
-    library("argparser")
-    library("reticulate")
-    library("SingleCellExperiment")
-    library("Seurat")
-All dependencies exist in R and can be easily installed and used.
-
+## Install
+```
+install.packages("argparser")
+install.packages("reticulate")
+install.packages("SingleCellExperiment")
+install.packages("Seurat")
+```
+## All dependencies exist in R and can be easily installed and used.
+Convert to h5ad
 ```
 suppressPackageStartupMessages({
     library("argparser")
