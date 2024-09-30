@@ -78,3 +78,4 @@ obj <- TSSEnrichment(object = obj)
 ```
 TSSPlot(obj) + NoLegend() + ggtitle("Enrichment around TSS")
 ```
+<img src="./tssplot.png" width = "500" height = "500">.
