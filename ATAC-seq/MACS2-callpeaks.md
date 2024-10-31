@@ -79,7 +79,7 @@ narrowPeak文件是BED6 4格式，可以上传到UCSC浏览。输出文件每列
 · -log10pvalue
 · -log10qvalue
 · relative summit position to peak start（？）
-<img src="./peaks.narrowPeak.png" width = "500" height = "500">.
+<img src="./peaks.narrowPeak.png" width = "1000" height = "300">.
 
 ### NAME_summits.bed
 BED格式的文件，包含peak的summits位置，第5列是-log10pvalue。如果想找motif，推荐使用此文件。
