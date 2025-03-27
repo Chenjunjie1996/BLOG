@@ -7,7 +7,7 @@ UTR: Untranslated region; FWR: Framework region; CDR: Complementarity determinin
 ### 克隆型中会存在多条链(e.g. 1 alpha chain and 2 beta chains)
 ```
 A small fraction of T cells are known to express 2 alpha + 1 beta or 1 alpha + 2 beta chains.
-Similarly, there is evidence that some B cells express more than 1 heavy or light chain (Ref3, Ref4).
+Similarly, there is evidence that some B cells express more than 1 heavy or light chain.
 ```
 https://www.science.org/doi/10.1126/science.8211163 \
 https://pmc.ncbi.nlm.nih.gov/articles/PMC2191970/pdf/je18141587.pdf \
