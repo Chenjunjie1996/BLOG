@@ -8,7 +8,7 @@ i.e. annotatePeaks.pl ERpeaks.txt hg18   > outputfile.txt
 ```
 The first two arguments, the <peak file> and <genome>, are required, and must be the first two arguments. 
 ## Example of the output 
-<img src="./fragmentdistribution.png" width = "500" height = "500">.
+<img src="./annotation.example.png" width = "800" height = "600">.
 ```
 Description of Columns:
 Peak ID
