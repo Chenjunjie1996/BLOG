@@ -52,3 +52,20 @@ Column6: Strand (+/- or 0/1, where 0="+", 1="-")
 
 ## How Basic Annotation Works
 The process of annotating peaks/regions is divided into two primary parts.  The first determines the distance to the nearest TSS and assigns the peak to that gene. The second determines the genomic annotation of the region occupied by the center of the peak/region.
+### Distance to the nearest TSS
+By default, annotatePeaks.pl loads a file in the "/path-to-homer/data/genomes/<genome>/<genome>.tss" that contains the positions of RefSeq transcription start sites.  It uses these positions to determine the closest TSS, reporting the distance (negative values mean upstream of the TSS, positive values mean downstream), and various annotation information linked to each locus including alternative identifiers (unigene, entrez gene, ensembl, gene symbol etc.).  This information is also used to link gene-specific information (see below) to a peak/region, such as gene expression.
+### Genomic Annotation
+To annotate the location of a given peak in terms of important genomic features, annotatePeaks.pl calls a separate program (assignGenomeAnnotation) to efficiently assign peaks to one of millions of possible annotations genome wide.  Two types of output are provided.  The first is "Basic Annotation" that includes whether a peak is in the TSS (transcription start site), TTS (transcription termination site), Exon (Coding), 5' UTR Exon, 3' UTR Exon, Intronic, or Intergenic, which are common annotations that many researchers are interested in.  A second round of "Detailed Annotation" also includes more detailed annotation, considering repeat elements and CpG islands.  Since some annotation overlap, a priority is assign based on the following (in case of ties it's random [i.e. if there are two overlapping repeat element annotations])
+```
+TSS (by default defined from -1kb to +100bp)
+TTS (by default defined from -100 bp to +1kb)
+CDS Exons
+5' UTR Exons
+3' UTR Exons
+**CpG Islands
+**Repeats
+Introns
+Intergenic
+```
+### Calculating Peak Enrichment for Genomic Annotations
+In addition to assigning genomic annotations to each peak, this program will also output the relative enrichment of your peaks in each set of genomic annotations (i.e. enrichment of the peaks in promoter regions, exons, CpG Islands, etc.). This calculation is performed by first identifying the fraction of the annotated genome assigned to each annotation. This is used to establish the expected distribution of peaks for each annotation. This is then compared to the observed fraction of peaks assigned to each annotation, using the binomial distribution to assign a significance p-value. To avoid divide by zero errors, annotations not assigned to a peak are given a pseudo count of one minus the expected fraction of peaks for that annotation when calculating the observed vs. expected log2 ratios and p-values.
