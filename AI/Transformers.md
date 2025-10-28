@@ -1,5 +1,6 @@
 ## Transformer in Single-Cell Omics
 Transformers allow machines not just to compute gene expression—but to comprehend it. In this data-driven era of biology, the Transformer is more than an algorithm; it’s a new way of thinking. When AI can understand cells, we move one step closer to truly computational life science.
+<img src="./transformer.png" width = "666" height = "666">.
 
 ## From Natural Language to Cellular Language.
 The Transformer model, introduced by Google in 2017, was originally designed for natural language processing (NLP).
@@ -12,7 +13,6 @@ In single-cell omics, we also have a language — the language of cellular expre
 
 This leads to a powerful idea:
 If Transformers can understand human language, maybe they can understand cellular language too.
-<img src="./IgFold.png" width = "666" height = "666">.
 
 ## How Transformers Are Changing Single-Cell Analysis
 Traditional single-cell analyses rely on PCA, UMAP, or graph neural networks (GNNs).
@@ -35,7 +35,6 @@ It can be fine-tuned for downstream tasks such as:
 
 Key insight:
 Pretraining + fine-tuning enables a universal understanding of cellular expression.
-show_pdb(pred_pdb, len(sequences), bb_sticks=False, sc_sticks=True, color="b")
 
 ### Multi-Modal Integration: Bridging RNA, ATAC, and Spatial Data
 Representative works: scMoFormer, UniFormer, scFoundation
@@ -75,3 +74,9 @@ This shifts deep learning from being a black box to a biologically interpretable
 - Model-driven predictions of cell fate and drug response
 
 Just as BERT and GPT transformed language understanding, Transformers are transforming how we understand the language of life.
+
+
+## Recommended Reading
+- Yuan H. et al. scBERT: Pre-training Transformer Model for Single-cell Transcriptomics. Nature Machine Intelligence (2023)
+- Theis F. et al. Geneformer: Foundation Model for Single-cell Biology. bioRxiv (2023)
+- Wang Z. et al. scFoundation: Universal Foundation Model for Single-cell Omics. bioRxiv (2024)
