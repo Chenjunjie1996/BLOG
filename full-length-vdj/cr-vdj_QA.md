@@ -13,6 +13,8 @@ https://www.science.org/doi/10.1126/science.8211163 \
 https://pmc.ncbi.nlm.nih.gov/articles/PMC2191970/pdf/je18141587.pdf \
 https://www.nature.com/articles/s41421-019-0137-3 \
 https://journals.aai.org/jimmunol/article/185/7/3801/83133/Antigen-Receptor-Allelic-Exclusion-An-Update-and
+### What should I do when I get more than 1 chain of same type in the same cell?
+https://kb.10xgenomics.com/s/article/360026995572-What-should-I-do-when-I-get-more-than-1-chain-of-same-type-in-the-same-cell
 ### 某一种克隆型占比非常高的原因
 ```
 正常人的机体时刻在应对各种各样内源性或外源性的抗原，所以不管是BCR还是TCR都应该是多克隆的，单克隆往往提示病理状态（低多样性cdr3）
