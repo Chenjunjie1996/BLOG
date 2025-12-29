@@ -152,5 +152,5 @@ proj <- addGeneIntegrationMatrix(
 ```
 
 ## 
-https://www.archrproject.com
+https://www.archrproject.com \
 https://www.nature.com/articles/s41588-021-00790-6
