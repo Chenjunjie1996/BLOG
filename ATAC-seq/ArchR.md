@@ -2,8 +2,6 @@
 A production-ready pipeline for single-cell ATAC-seq analysis using ArchR, covering dimensionality reduction, clustering, peak calling, motif analysis, and RNA–ATAC integration. ArchR is a mature and scalable framework designed specifically for scATAC-seq analysis. This repository documents a full ArchR-based workflow, from raw fragment files to regulatory inference.
 
 ## Key Features.
-- Works with paired heavy/light chains or single chains (e.g., nanobodies).
-- Input = amino acid sequence(s).
 - Disk-backed data storage via Arrow (HDF5) files
 - TF-IDF + LSI dimensionality reduction
 - Iterative clustering strategy for robust representations
