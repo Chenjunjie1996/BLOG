@@ -13,9 +13,9 @@ This document provides a **technical and practical overview** of the **FRiP (Fra
 
 Mathematically:
 
-\[
-FRiP = \frac{\text{Reads overlapping peaks}}{\text{Total mapped reads}}
-\]
+```
+FRiP = Reads overlapping called peaks​ / Total mapped reads
+```
 
 FRiP is widely used as a **signal-to-noise indicator** in ATAC-seq experiments.
 
