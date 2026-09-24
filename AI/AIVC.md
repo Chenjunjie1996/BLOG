@@ -102,17 +102,3 @@ Arc Institute 等机构推动的 Virtual Cell Challenge 正是为了建立“虚
 
 ## 写在最后
 AIVC仍处于早期阶段。它不是一个已经“可用”的成品模型，而是一个正在被整个生命科学与 AI 社区共同定义的基础设施愿景。它的价值在于：把假设探索从湿实验的线性节奏，变成可大规模并行的计算过程；把“我猜这个基因很重要”变成“我先在虚拟细胞里跑完一万种可能，再决定做哪几个实验”。如果 AlphaFold 解决了“蛋白质怎么折”，那么 AIVC 试图回答的是——细胞作为系统，如何响应世界。这可能是未来十年计算生物学最激动人心的方向之一。
-
-## 引用
-
-```bibtex
-@article{bunne2024virtual,
-  title={How to build the virtual cell with artificial intelligence: Priorities and opportunities},
-  author={Bunne, Charlotte and Roohani, Yusuf and others},
-  journal={Cell},
-  volume={187},
-  number={25},
-  pages={7045--7063},
-  year={2024},
-  publisher={Elsevier}
-}
